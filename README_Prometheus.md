@@ -1,26 +1,27 @@
-# Multi-Agent Template App: A High-Performance Framework for Collaborative AI Development
+# Multi-Agent Template App: A Cutting-Edge Framework for Collaborative AI Systems
 
 ## Project Overview
 
-Multi-Agent Template App is a radically simple and high-performance framework designed to accelerate the development of multi-agent applications. This template provides developers with a robust, flexible foundation for creating sophisticated multi-agent systems with minimal overhead.
+Multi-Agent Template App is a cutting-edge framework designed to simplify and accelerate the development of multi-agent applications. At its core, the project aims to provide developers with a radically simple, reliable, and high-performance template for creating sophisticated multi-agent systems.
 
-### Core Purpose
-The project aims to simplify and streamline the process of building complex multi-agent applications by offering a standardized, efficient template that reduces initial setup complexity and allows developers to focus on core application logic.
+### Key Objectives
+- Enable rapid development of multi-agent applications
+- Provide a flexible and modular framework for AI collaboration
+- Reduce complexity in building complex agent-based systems
 
-### Key Features
-- **Rapid Development**: Quick setup and configuration for multi-agent systems
-- **High Performance**: Optimized architecture for efficient agent interactions
-- **Flexibility**: Adaptable template that supports various multi-agent use cases
-- **Simplicity**: Intuitive design that reduces boilerplate code
-- **Extensibility**: Easy to customize and extend for specific project requirements
+### Core Features
+- Simplified multi-agent architecture
+- High-performance template design
+- Easy-to-use and intuitive interface
+- Comprehensive support for various AI and machine learning workflows
 
 ### Benefits
-- Accelerates multi-agent application development
-- Provides a standardized, reliable starting point
-- Supports seamless integration with various AI and machine learning tools
-- Encourages modular and scalable application design
+- Dramatically reduces development time for multi-agent projects
+- Offers a robust foundation for building intelligent, collaborative AI systems
+- Supports seamless integration of advanced AI technologies
+- Emphasizes modularity and extensibility
 
-The template is particularly valuable for developers and researchers looking to implement collaborative AI systems, intelligent automation, or complex problem-solving scenarios involving multiple autonomous agents.
+The framework is particularly suited for developers and researchers looking to create innovative multi-agent applications with minimal overhead, combining simplicity with powerful capabilities.
 
 ## Getting Started, Installation, and Setup
 
@@ -28,48 +29,20 @@ The template is particularly valuable for developers and researchers looking to 
 
 - Python 3.10+
 - pip or poetry
-- Recommended: A virtual environment
+- Required dependencies: 
+  - torch
+  - zetascale
+  - swarms
 
 ### Quick Start
 
-#### Install via pip
-
-```bash
-pip install paper
-```
-
-#### Install from GitHub
-
-```bash
-git clone https://github.com/kyegomez/paper
-cd paper
-pip install -r requirements.txt
-```
-
-### Dependencies
-
-The project requires the following core dependencies:
-- torch
-- swarms
-- pydantic
-- fastapi
-- zetascale
-
-### Development Setup
-
 1. Clone the repository:
 ```bash
-git clone https://github.com/kyegomez/paper
+git clone https://github.com/kyegomez/paper.git
 cd paper
 ```
 
-2. Create a virtual environment (optional but recommended):
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-```
-
-3. Install dependencies:
+2. Install dependencies:
 ```bash
 # Using pip
 pip install -r requirements.txt
@@ -78,263 +51,342 @@ pip install -r requirements.txt
 poetry install
 ```
 
-### Running the Project
+### Development Setup
 
-You can run the project using the main script:
+#### Local Development
 
+1. Install development dependencies:
+```bash
+# Using pip
+pip install -r requirements.txt
+
+# Using poetry
+poetry install --with lint
+```
+
+2. Run code quality checks:
+```bash
+# Format code
+make style
+
+# Check code quality
+make check_code_quality
+```
+
+#### Running the Project
+
+You can run the project using the example script:
 ```bash
 python example.py
 ```
 
-### Docker Support
+### Testing
 
-A Dockerfile is provided for containerized deployment:
-
+Run tests using pytest:
 ```bash
-# Build the Docker image
-docker build -t paper .
+pytest
+```
 
-# Run the Docker container
-docker run -it paper
+### Build and Publish
+
+To build the project for distribution:
+```bash
+poetry build
+poetry publish
 ```
 
 ### Platform Considerations
 
-- Tested on Linux, macOS, and Windows
-- Requires Python 3.10 or higher
-- GPU support recommended for machine learning tasks (via PyTorch)
+- Supports Python 3.10+
+- Compatible with major operating systems (Linux, macOS, Windows)
+- Recommended to use a virtual environment
 
 ### Troubleshooting
 
-- Ensure you have the latest version of pip
-- Install system dependencies if encountering build issues
-- Check compatibility with your Python version
+- Ensure you have the latest version of pip and poetry
+- Check that all dependencies are correctly installed
+- Verify Python version compatibility
 
 ## Features / Capabilities
 
-### Multi-Agent Application Template
+The Multi-Agent Template App provides a robust and flexible framework for building multi-agent applications with the following core features:
 
-The Multi-Agent Template App provides a streamlined framework for rapidly developing multi-agent applications with the following key capabilities:
+### Modular Architecture
+- Quickly set up and configure multi-agent systems
+- Flexible and extensible design for building collaborative AI applications
+- Supports seamless integration of different agent components
 
-#### Core Features
-- Simplified multi-agent application development
-- High-performance template for quick project setup
-- Flexible and reliable architecture
-- Comprehensive development toolchain
+### Development Tooling
+- Comprehensive code quality checks
+- Automated testing infrastructure
+- Continuous Integration and Continuous Deployment (CI/CD) support
+- Built-in code formatting and linting tools
 
-#### Development Tooling
-- Integrated code quality checks
-- Automated testing support
-- Continuous Integration/Continuous Deployment (CI/CD) workflows
-- Easy PyPI publishing process
+### Project Management Features
+- Easy installation via pip
+- Streamlined release and publication process
+- Detailed documentation using MkDocs
+- GitHub Actions for automated workflows
 
-#### Project Management Tools
-- Automated GitHub Actions for:
-  - Code quality verification
-  - Automated testing
-  - Release management
-- Built-in code formatting with `black`
-- Static code analysis with `ruff`
-- Pytest integration for comprehensive testing
+### Technical Capabilities
+- Python-based framework
+- Support for modular neural network components
+- Flexible tokenization and embedding strategies
+- Advanced training and optimization techniques
 
-#### Documentation
-- MkDocs documentation system
-- Predefined documentation structure
-- ReadTheDocs configuration
-- Extensive example documentation
+### Extensibility
+- Customizable agent architectures
+- Support for various AI and machine learning use cases
+- Easily adaptable to different project requirements
 
-#### Extensibility
-- Modular project structure
-- Easy-to-customize template
-- Supports various multi-agent application use cases
+### Ecosystem Support
+- Integration with popular AI and machine learning tools
+- Multiple example use cases and demonstrations
+- Active community support via Discord and other channels
 
-### Technical Highlights
-- Designed for rapid prototyping and scalable multi-agent systems
-- Supports multiple development workflows
-- Includes comprehensive development and deployment scripts
-- Focuses on code quality and maintainability
+## Usage Examples
+
+### Basic Setup
+
+Before using the project, ensure you have installed the requirements:
+
+```bash
+pip3 install -r requirements.txt
+```
+
+### Code Quality Checks
+
+Run code quality checks and formatting:
+
+```bash
+# Format code
+make style
+
+# Check code quality
+make check_code_quality
+
+# Alternative formatting methods
+black .
+ruff . --fix
+```
+
+### Running Tests
+
+Execute project tests using pytest:
+
+```bash
+# Run tests
+pytest
+```
+
+### Publishing to PyPI
+
+When you're ready to publish a new version:
+
+1. Update the version in the package's `__init__.py`
+2. Build and publish the package:
+
+```bash
+poetry build
+poetry publish
+```
+
+### Release Process
+
+To create a new release:
+
+```bash
+# Create and push a new tag
+git tag v0.0.1
+git push origin v0.0.1
+
+# Then create a release through the GitHub UI
+```
+
+### Documentation
+
+The project uses MkDocs for documentation. Configuration and documentation files are already set up in the repository.
 
 ## Project Structure
 
-The project is organized into several key directories and files to support a modular and maintainable multi-agent application template:
+The project is organized into several key directories and files to support its functionality and development:
 
-### Root Directory
-- `pyproject.toml`: Project configuration and dependency management using Poetry
-- `requirements.txt`: Alternative dependency specification
-- `Dockerfile`: Containerization configuration
-- `Makefile`: Defines helpful commands for development tasks
-- `LICENSE`: Project licensing information
-- `README.md`: Project documentation and overview
+### Main Project Structure
+```
+.
+├── .github/                  # GitHub-specific configuration and workflow files
+│   ├── ISSUE_TEMPLATE/       # Templates for GitHub issues
+│   ├── workflows/            # CI/CD and automation workflows
+│   └── configuration files   # Various GitHub repository settings
+│
+├── docs/                     # Comprehensive documentation
+│   ├── applications/         # Use case documentation
+│   ├── assets/               # Static assets for documentation
+│   ├── examples/             # Code and usage examples
+│   ├── zeta/                 # Detailed technical documentation
+│   │   ├── nn/               # Neural network related documentation
+│   │   └── tokenizers/       # Tokenization documentation
+│   └── various .md files     # Additional documentation pages
+│
+├── package/                  # Main package source code
+│   ├── __init__.py           # Package initialization
+│   ├── main.py               # Primary application logic
+│   └── subfolder/            # Additional package modules
+│
+├── scripts/                  # Utility and automation scripts
+│   └── Various shell scripts # Development and testing scripts
+│
+├── Dockerfile                # Container deployment configuration
+├── LICENSE                   # Project licensing information
+├── Makefile                  # Build and development commands
+├── pyproject.toml            # Python project configuration
+└── requirements.txt          # Python dependencies
+```
 
-### Source Code
-- `package/`: Primary source code directory
-  - `__init__.py`: Package initialization
-  - `main.py`: Core application logic
-  - `subfolder/`: Additional module with:
-    - `__init__.py`
-    - `main.py`: Supplementary module implementation
+### Key Directories Overview
+- `.github/`: Contains GitHub-specific configurations, including workflow automation, issue templates, and CI/CD pipelines.
+- `docs/`: Comprehensive documentation with detailed technical explanations, use cases, and examples.
+  - `docs/zeta/`: In-depth technical documentation for specific components
+- `package/`: Primary source code for the project
+- `scripts/`: Utility scripts for development, testing, and project management
 
-### Documentation
-- `docs/`: Comprehensive project documentation
-  - `index.md`: Main documentation landing page
-  - `applications/`: Use case specific documentation
-  - `examples/`: Code examples and tutorials
-  - `zeta/`: Detailed technical documentation for specific components
-  - `assets/`: Supporting documentation resources like images and stylesheets
+### Configuration and Build Files
+- `Dockerfile`: Defines the container environment for the project
+- `pyproject.toml`: Project configuration and dependency management
+- `requirements.txt`: Python package dependencies
+- `Makefile`: Provides commands for building, testing, and managing the project
 
-### Continuous Integration and Development
-- `.github/workflows/`: GitHub Actions for automated processes
-  - Multiple workflow files for code quality, testing, documentation, and deployment
-- `scripts/`: Utility scripts for various development tasks
-  - `code_quality.sh`
-  - `tests.sh`
-  - Other helper scripts
-
-### Testing and Quality Assurance
-- `example.py`: Example script demonstrating library usage
-- Configuration files for code quality tools:
-  - `.pre-commit-config.yaml`
-  - Various linting and testing workflow configurations
-
-The project structure is designed to provide clear separation of concerns, with dedicated directories for source code, documentation, testing, and continuous integration, facilitating ease of development and maintenance.
+The project follows a structured approach with clear separation of concerns, supporting documentation, configuration, and source code in distinct directories.
 
 ## Technologies Used
 
-#### Core Programming Language
+### Programming Languages
 - Python (3.10+)
 
-#### Frameworks and Libraries
-- PyTorch: Deep learning framework for neural network development
-- Swarms: AI and multi-agent system library
+### Core Frameworks and Libraries
+- PyTorch: Deep learning framework for model development
+- Swarms: AI agent and distributed computing library
+- ZetaScale: Custom scaling and optimization library
+- Pydantic: Data validation and settings management
 - FastAPI: Web framework for building APIs
-- Pydantic: Data validation and settings management library
 
-#### Development and Build Tools
+### Development and Build Tools
 - Poetry: Dependency management and packaging
-- Ruff: Fast Python linter and code formatter
+- Ruff: Python linter and code quality tool
 - Black: Code formatter
-- MyPy: Static type checker
+- mypy: Static type checker
 
-#### Code Quality and Testing Tools
+### DevOps and CI/CD
+- GitHub Actions: Continuous integration and workflow automation
+- Docker: Containerization and deployment
+
+### Additional Tools
+- OpenCV: Computer vision and image processing library
+
+### Code Quality and Linting
+- Autopep8: Python code formatting
+- Ruff: Extremely fast Python linter
+- Black: Code formatter with strict settings
+
+### Project Management
 - Pre-commit: Git hooks for code quality checks
-- GitHub Actions: Continuous Integration and Deployment
-
-#### Other Technologies
-- ZetaScale: Specialized computing library
-- Docker: Containerization platform (Dockerfile present)
-
-#### Version Control
-- Git
-- GitHub (for repository management)
 
 ## Additional Notes
 
-### Project Ecosystem and Community
+### Project Development Status
+This project is currently in beta stage, actively developed and maintained by the community. Users should expect ongoing improvements and potential breaking changes.
 
-This project is part of the broader Swarms ecosystem, which focuses on multi-agent collaboration and advanced AI frameworks. The project maintains an active community across multiple platforms:
+### Community and Support
+- Join the project's [Discord server](https://discord.gg/agora-999382051935506503) for community support, discussions, and collaboration
+- Follow project updates on [YouTube](https://www.youtube.com/@kyegomez3242)
+- Connect with the maintainer on [LinkedIn](https://www.linkedin.com/in/kye-g-38759a207/)
+- Stay updated via [X.com (Twitter)](https://x.com/kyegomezb)
 
-- **Discord**: Join the [Swarms Discord server](https://discord.gg/qUtxnK2NMf) for real-time discussions, support, and collaboration
-- **YouTube**: [Subscribe to the channel](https://www.youtube.com/@kyegomez3242) for tutorials and project updates
-- **Social Media**: 
-  - Follow on [LinkedIn](https://www.linkedin.com/in/kye-g-38759a207/)
-  - Follow on [X.com](https://x.com/kyegomezb)
-
-### Documentation and Resources
-
-The project uses MkDocs for comprehensive documentation, with detailed guides covering:
+### Documentation
+The project uses MkDocs for comprehensive documentation. Detailed technical documentation is available in the `docs/` directory, covering various aspects of the project including:
 - Architecture
 - Design principles
-- Examples and use cases
+- Example use cases
 - Technical references
 
-### Project Versioning and Maintenance
+### Development Tools
+The project is equipped with robust development tooling:
+- Code quality checks using `ruff` and `black`
+- Automated testing with `pytest`
+- Continuous Integration via GitHub Actions
+- Poetry for dependency management
 
-The project follows semantic versioning and maintains rigorous code quality standards:
-- Automated testing via GitHub Actions
-- Continuous integration and deployment (CI/CD)
-- Regular code quality checks using tools like Black and Ruff
-- Automated PyPI publishing for new releases
+### Compatibility
+- Recommended Python version: 3.10+
+- Compatible with key AI and web development libraries:
+  - Swarms framework
+  - Pydantic
+  - FastAPI
 
-### Research and Development
+### Contribution Guidelines
+Contributions are welcome! Please refer to the project's contribution guidelines for details on how to participate in the project's development.
 
-The project is actively developed with a focus on:
-- Modular AI framework design
-- Multi-agent collaboration
-- High-performance neural network architecture
-- Scalable AI model development
-
-### Contribution and Community Guidelines
-
-Contributions are welcome and encouraged. The project maintains:
-- Detailed contribution guidelines
-- Issue and pull request templates
-- Code of conduct for community interactions
-
-### Academic and Research Recognition
-
-Researchers and academics are encouraged to cite the project in their work. A standard citation format is provided in the README to facilitate academic acknowledgment.
+### Acknowledgments
+If you find this project useful in your research or application, please consider citing it using the provided BibTeX citation in the README.
 
 ## Contributing
 
-We welcome contributions from the community! Whether you're fixing bugs, adding features, improving documentation, or helping with testing, your help is appreciated.
+We welcome contributions from the community to help improve and advance the project! Here's how you can get involved:
 
 ### Contribution Guidelines
 
-#### How to Contribute
+#### Getting Started
+1. Join our community on [Discord](https://discord.gg/qUtxnK2NMf) to connect with other contributors and get support.
+2. Check out the [GitHub issues](https://github.com/kyegomez/zeta) to find tasks you can work on.
 
-1. **Fork the Repository**: Create a fork of the project on GitHub.
+#### Contribution Process
+1. Fork the repository
+2. Create a feature branch with a descriptive name
+3. Make focused, small changes
+4. Run formatting and linting tools before committing
+5. Write clear, descriptive commit messages
+6. Submit a pull request with a comprehensive description
 
-2. **Create a Branch**: Make a new branch for your contribution with a descriptive name.
+#### Optimization Priorities
+We prioritize the following design objectives:
+- **Usability**: Improve ease of use and user-friendliness
+- **Reliability**: Enhance output consistency with basic inputs
+- **Speed**: Reduce task completion time
+- **Scalability**: Ensure asynchronous and self-healing system design
 
-3. **Make Changes**: 
-   - Ensure your code follows the project's code style
-   - Use `black` for code formatting
-   - Use `ruff` for linting and additional code quality checks
+#### Contribution Requirements
+- Follow existing code style and formatting
+- Include relevant tests for new features or bug fixes
+- Provide clear documentation for any changes
+- Ensure your code passes all existing test suites
 
-4. **Test Your Changes**: 
-   - Run existing tests
-   - Add new tests if you're introducing new functionality
+#### Pull Request Guidelines
+- Describe the purpose of your changes
+- Reference any related issues
+- Include any necessary dependencies
+- Be prepared to address review feedback constructively
 
-5. **Submit a Pull Request**:
-   - Provide a clear description of your changes
-   - Reference any related issues
-   - Explain the motivation behind your contribution
-
-### Optimization Priorities
-
-We focus on improving the project along these key dimensions:
-- **Usability**: Enhance user-friendliness
-- **Reliability**: Improve output consistency
-- **Speed**: Optimize performance and task completion time
-- **Scalability**: Ensure system can handle increased load
-
-### Community and Support
-
-- Join our [Discord Server](https://discord.gg/qUtxnK2NMf) to connect with other contributors
-- Check the [GitHub Issues](https://github.com/kyegomez/zeta/issues) for tasks you can help with
+#### Reporting Issues
+- Use the GitHub issue tracker to report bugs or suggest features
+- Provide detailed information to help reproduce and resolve issues
 
 ### Code of Conduct
+We are committed to providing a welcoming and inspiring community for all. Contributions should be respectful, inclusive, and collaborative.
 
-Be respectful, inclusive, and constructive. We aim to create a welcoming environment for all contributors.
+Thank you for helping improve the project!
 
 ## License
 
-The project is licensed under the MIT License. 
+This project is licensed under the MIT License. 
 
-### License Details
-
-This software is released under the MIT License, which provides users with extensive freedom to use, modify, and distribute the code. 
-
-Key permissions:
-- Commercial use
-- Modification
-- Distribution
-- Private use
-
-### Conditions
-- Include the original license and copyright notice in any substantial portion of the software
-
-### Limitations
-- No warranty or liability for authors
+### Key License Terms
+- You are free to use, modify, and distribute this software
+- Commercial use is permitted
+- Modification and distribution are allowed
+- A copy of the license and copyright notice must be included with the software
+- The software is provided "as is" without warranty
 
 For the full license text, please see the [LICENSE](LICENSE) file in the repository.
+
+#### Copyright
+Copyright (c) 2023 Eternal Reclaimer
